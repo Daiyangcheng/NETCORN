@@ -1,7 +1,7 @@
 {
-  "name": "netcorn-maintenance",
-  "version": "1.0.0",
-  "description": "NETCORN Enterprise Maintenance Website",
+  "name": "netcorn-isp",
+  "version": "2.0.0",
+  "description": "NETCORN - Professional Internet Dedicated Leased Line ISP",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -1,14 +1,21 @@
 <template>
-  <div class="app-container">
-    <Maintenance />
-    <footer class="footer">
-      NETCORN | CORNSEED LIMITED 2026
-    </footer>
+  <div class="app">
+    <Header />
+    <Hero />
+    <Services />
+    <Features />
+    <CTA />
+    <Footer />
   </div>
 </template>
 
 <script setup>
-import Maintenance from './components/Maintenance.vue'
+import Header from './components/Header.vue'
+import Hero from './components/Hero.vue'
+import Services from './components/Services.vue'
+import Features from './components/Features.vue'
+import CTA from './components/CTA.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <style>
@@ -18,32 +25,41 @@ import Maintenance from './components/Maintenance.vue'
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background: #0f172a;
+  color: #fff;
+}
+
 #app {
   width: 100%;
   min-height: 100vh;
 }
 
-.app-container {
+.app {
   width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
 }
 
-.footer {
-  position: absolute;
-  bottom: 30px;
-  width: 100%;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 1px;
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 212, 255, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 212, 255, 0.8);
 }
 </style>
